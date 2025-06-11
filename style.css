@@ -324,12 +324,18 @@ color: #fff;
   padding: 60px 24px;
   background-color: #ffffff;
   text-align: center;
+     background-image: url('img/Planet\ Arcadia.png'); /* Replace with your image path */
+  background-repeat: no-repeat;                /* Prevents image repetition */
+  background-size: cover;                      /* Scales image to fill */
+  background-position: center;                 /* Centers the image */
+  background-attachment: fixed;                /* Optional: creates parallax effect */
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 40px;
-  color: #333;
+  color: #ffffff;
+  
 }
 
 .product-grid {
