@@ -101,7 +101,22 @@
   </div>
 </footer>
 
+<script>
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); // Remove if you want animation every time
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
 
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
   <script src="script.js"></script>
     
 </body>

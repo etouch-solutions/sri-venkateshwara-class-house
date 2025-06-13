@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="element.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -23,7 +25,7 @@
       <a href="contact.html">Contact us</a>
     </nav>
 
-   <a style="text-decoration: none;" href="expo.html"> <button style="background-color: #09026b;" class="cta-btn " >Get Started</button></a>
+   <a style="text-decoration: none;" href="tel:+919791917872"> <button style="background-color: #09026b;" class="cta-btn " >Call now</button></a>
   </header>
 
 
@@ -119,7 +121,22 @@
   </div>
 </footer>
 
+<script>
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); // Remove if you want animation every time
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
 
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
   <script src="script.js"></script>
     
 </body>

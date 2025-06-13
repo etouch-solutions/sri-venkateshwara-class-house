@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="element.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -23,7 +25,7 @@
       <a href="contact.html">Contact us</a>
     </nav>
 
-   <a style="text-decoration: none;" href="expo.html"> <button style="background-color: #09026b;" class="cta-btn " >Get Started</button></a>
+   <a style="text-decoration: none;" href="tel:+919791917872"> <button style="background-color: #09026b;" class="cta-btn " >Call now</button></a>
   </header>
 
 
@@ -33,8 +35,8 @@
   <section class="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <h1>Grow Your Business with Confidence</h1>
-      <p>We help startups and enterprises build scalable digital experiences with strategy, design, and code.</p>
+      <h1>About the Founder</h1>
+      <p>Mr. P. Velmurugan (M.B.A) is the founder of Sri Venkateshwara Glass House. With a strong business background and a passion for quality, he started the company in 2019 to offer reliable and stylish glass, UPVC, and interior solutions. His commitment to trust, timely service, and customer satisfaction has made SVG a trusted name in Karur and beyond.</p>
          <button>Learn More</button>
     </div>
     <div class="hero-image">
@@ -52,8 +54,8 @@
       <img src="img/Untitled design (14).png" alt="Hero Image" />
     </div>
     <div class="hero-text">
-      <h1>Grow Your Business with Confidence</h1>
-      <p>We help startups and enterprises build scalable digital experiences with strategy, design, and code.</p>
+      <h1> About the Brand</h1>
+      <p>Sri Venkateshwara Glass House is more than just a service provider — it’s a brand built on trust, quality, and innovation. Since 2019, SVG has become a go-to name for premium glass, UPVC, and interior solutions in Karur. We combine craftsmanship with modern design to deliver products that are not only functional but also elevate the aesthetic appeal of every space. Partnered with top brands like Saint Gobain, Gold Plus, and Alstrong, our work reflects durability, style, and unmatched precision.</p>
          <button>Learn More</button>
     </div>
    
@@ -62,36 +64,37 @@
 
  <section class="about-section">
     <div class="container">
-      <h1>About Sri Vengadeswara Glass House</h1>
-      <p>
-        Sri Vengadeswara Glass House is a leading supplier of toughened glass, UPVC windows and doors, aluminum partition works, and hardware fittings across Tamil Nadu. Based in Karur, we proudly deliver quality solutions to residential, commercial, and industrial projects throughout Chennai, Coimbatore, Madurai, Salem, Trichy, and beyond.
-      </p>
-      <p>
-        With a focus on innovation and durability, we offer a range of products including designer glass, shower cubicles, mirror works, PVC doors, false ceilings, and interior wood panels. We are committed to quality, affordability, and timely service—making us a trusted name among architects, builders, and homeowners.
-      </p>
-      <p>
-        We are associated with premium brands such as Saint Gobain, Gold Plus, Ozone, and Alstrong, ensuring the best for our clients. Whether you're building a new space or renovating, Sri Vengadeswara Glass House is your one-stop solution for stylish and reliable materials.
-      </p>
-      <p>
-        Visit us at Thiru.Vi.Ka Road, Karur, or contact us at +91 97919 17872 for personalized service. We deliver to all cities in Tamil Nadu.
+      <h1> About Our Services</h1>
+      <p style="text-align: center;">
+        At Sri Venkateshwara Glass House, we offer a wide range of high-quality services tailored for homes, offices, and commercial spaces. Our expertise includes UPVC windows and doors, aluminum and toughened glass partitions, ACP and HPL elevations, laminated and designer glass, cupboards, plywood works, and customized hardware installations. Every service is executed with attention to detail, using top-grade materials from trusted brands. Whether it's a new construction or a renovation project, we deliver stylish, durable, and functional solutions that meet your needs with perfection.
+
       </p>
     </div>
   </section>
 
 
-  <section class="hero">
-  <div class="hero-content">
-    
-    <div class="hero-image">
-      <img src="img/thank.png" alt="Hero Image" />
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="img/view-3d-house-model_23-2150761014.avif" alt="About Image" />
     </div>
-    <div class="hero-text">
-      <h1>Grow Your Business with Confidence</h1>
-      <p>We help startups and enterprises build scalable digital experiences with strategy, design, and code.</p>
-         <button>Learn More</button>
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+    Sri Venkateshwara Glass House, founded in 2019 by Mr. P. Velmurugan (M.B.A), is a trusted name in the glass and UPVC industry based in Karur. With a strong commitment to quality, innovation, and customer satisfaction, we specialize in a wide range of services including UPVC windows and doors, aluminum and toughened glass partitions, ACP elevations, plywood and cupboard works, laminated and designer glass, and much more.
+
+Our work is powered by premium brands like Saint Gobain, Gold Plus, Gopal, Ozone, and Perfex to ensure that every project reflects durability and elegance. We serve residential, commercial, and industrial clients with tailor-made solutions that blend aesthetics with functionality. Backed by years of experience, skilled craftsmanship, and a dedication to timely delivery, Sri Venkateshwara Glass House stands as a reliable partner for builders, architects, interior designers, and homeowners alike.
+
+
+
+
+      </p>
+      
+      <button>Learn More</button>
     </div>
   </div>
 </section>
+
 
 
 
@@ -183,7 +186,22 @@
     <p>&copy; 2025 sri venkateshwara glass house. All rights reserved. powered by <a style="text-decoration: none; color: rgb(200, 255, 0); font-weight: 900;" href="https://etouchsolutions.in/">eTouch</a></p>
   </div>
 </footer>
+<script>
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); // Remove if you want animation every time
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
 
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
   <script src="script.js"></script>
     
