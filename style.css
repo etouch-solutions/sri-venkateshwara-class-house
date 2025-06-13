@@ -32,7 +32,10 @@
       border-bottom: 1px solid #eee;
     }
 
-     
+    .logo-img {
+      height: 80px;
+      width: auto;
+    }
 
     nav {
       display: flex;
